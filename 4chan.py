@@ -3,16 +3,16 @@ from sys import platform as _platform
 
 if _platform == "linux" or _platform == "linux2":
 	cr, cg, cb, cp, cc, ce	= "\033[91m", "\033[92m", "\033[94m", "\033[95m", "\033[96m", "\033[0m"
-	sys.stdout.write("\x1b]2;(*) 4chan downloader by Markus Solutions_\x07")
+	sys.stdout.write("\x1b]2;(*) 4chan downloader by JVM_\x07")
 elif _platform == "darwin":
 	cr, cg, cb, cp, cc, ce	= "", "", "", "", "", ""
-	sys.stdout.write("\x1b]2;(*) 4chan downloader by Markus Solutions_\x07")
+	sys.stdout.write("\x1b]2;(*) 4chan downloader by JVM_\x07")
 elif _platform == "win32":
 	cr, cg, cb, cp, cc, ce	= "", "", "", "", "", ""
-	os.system("title (*) 4chan downloader by Markus Solutions_")
+	os.system("title (*) 4chan downloader by JVM_")
 
 print "\n\t-------------------------------------------"
-print "\t-        "+cg+"4chan"+ce+" downloader by "+cr+"Markus Solutions_"+ce+"        -"
+print "\t-        "+cg+"4chan"+ce+" downloader by "+cr+"JVM_"+ce+"        -"
 print "\t-                                         -"
 print "\t- Linux  : Press Ctrl+Shift+V to paste :) -"
 print "\t- Windows: Press Right-Button to paste :) -"
@@ -75,11 +75,11 @@ try:
 				if i == len(img1):
 					#Set title: Done
 					if _platform == "linux" or _platform == "linux2":
-						sys.stdout.write("\x1b]2;(*) Done - Markus Solutions_\x07")
+						sys.stdout.write("\x1b]2;(*) Done - JVM_\x07")
 					if _platform == "darwin":
-						sys.stdout.write("\x1b]2;(*) Done - Markus Solutions_\x07")
+						sys.stdout.write("\x1b]2;(*) Done - JVM_\x07")
 					if _platform == "win32":
-						os.system("title (*) Done - Markus Solutions_")
+						os.system("title (*) Done - JVM_")
 					
 					print cc+"\n(*) "+cb+"I stoped because the tread has no more than "+str(len(img1)-1)+" pic's.\n    Would you like me to check again for new images?"+ce
 					repeat	= raw_input("Yes / No: ")
